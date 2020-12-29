@@ -15,23 +15,23 @@ Also work with json request & response from APIs.
 
 ## Instructions
 
-1. If code is available on GIT repo then clone project code using below GIT command:
+1: Now code is available on GIT repo, please clone project using below GIT command:
 
-	`git clone <prject git repo URL>`
+	`git clone https://github.com/mal1pro2/ms-boot-bidder-app.git`
 
-2. Go to project directory & install dependencies & build project using maven command: 
+2: Go to project directory & install dependencies & build project using maven command: 
 
 	`mvn clean install`
 	
-3. Run project unit tests usingmaven command: 
+3: Run project unit tests usingmaven command: 
 	
 	 `mvn test`
 	 
-4. Go to the target directory under application directory & run application server via maven: 
+4: Go to the target directory under application directory & run application server via maven: 
 
 	`mvn spring-boot:run` or  `java -jar ***.jar`
 	
-5. First step to create Items with API : 
+5: First step to create Items with API : 
 
 	URL: `http://localhost:8080/items`
 	
@@ -41,7 +41,7 @@ Also work with json request & response from APIs.
 	    "description":"kty description"
 	} 
 	
-6. Second step to create AuctionItems with created Item details :
+6: Second step to create AuctionItems with created Item details :
 
 	URL: `http://localhost:8080/auctionItems`
 	
@@ -55,7 +55,7 @@ Also work with json request & response from APIs.
 	    }
 	}
 		
-7. Third step to create Bid with created AuctionItem id:
+7: Third step to create Bid with created AuctionItem id:
 
 	URL: `http://localhost:8080/bids`
 	
@@ -67,13 +67,21 @@ Also work with json request & response from APIs.
 	    "bidderName":"por Dealership"
 	}
 	
-8. To run application with different environment, need to set property 
+8: To run application with different environment, need to set property 
 
 	`spring.profiles.active=dev` into `application.properties` under `**\src\main\resources\`.
 	
-9. Swagger UI URL [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+9: Swagger UI URL [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
-10. Build jar is runnable jar so we can easily deploy on any cloud server as well.
+10: We can use JMeter for Performance testing.
+
+11: Right now we have used H2 database, We can also use MongoDB which can be scalable and handle more transactions.
+
+12: We have used spring boot application structure & already used standard annotations for making the application components.
+
+13: We have used latest version of spring boot & angular as well. 
+
+14: Build jar is runnable jar so we can easily deploy on any cloud server or container.
 
 ## DEV Tools
 
